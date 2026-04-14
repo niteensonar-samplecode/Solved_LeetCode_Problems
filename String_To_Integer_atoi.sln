@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse_Integer", "Reverse_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find Max_Substring", "Find Max_Substring\Find Max_Substring.csproj", "{CDB10CC3-2CB5-4496-8F13-D5E9D3001CC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find _Median_Of_2_Array", "Find _Median_Of_2_Array\Find _Median_Of_2_Array.csproj", "{C8630CFE-EF3B-4DF7-9A8B-E4D4570ECDA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CDB10CC3-2CB5-4496-8F13-D5E9D3001CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDB10CC3-2CB5-4496-8F13-D5E9D3001CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDB10CC3-2CB5-4496-8F13-D5E9D3001CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8630CFE-EF3B-4DF7-9A8B-E4D4570ECDA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8630CFE-EF3B-4DF7-9A8B-E4D4570ECDA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8630CFE-EF3B-4DF7-9A8B-E4D4570ECDA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8630CFE-EF3B-4DF7-9A8B-E4D4570ECDA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
