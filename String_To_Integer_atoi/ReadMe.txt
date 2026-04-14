@@ -1,5 +1,4 @@
-﻿
-String to Integer (atoi) - Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.
+﻿String to Integer (atoi) - Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.
 
 The algorithm for myAtoi(string s) is as follows:
 
