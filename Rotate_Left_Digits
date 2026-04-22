@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+					
+public class Program
+{
+	public static void Main()
+	{
+		List<int> arr= new List<int>();
+		arr.Add(1);
+		arr.Add(2);
+		arr.Add(3);
+		arr.Add(4);
+		arr.Add(5);
+
+		
+		for(int i=0; i<3; i++)
+        {
+			/*Console.WriteLine("Before :" + i);
+			foreach(int a in arr)
+            	Console.WriteLine(a + " ");
+				*/
+            //arr= swapItems(3,arr);
+			swapItems(3,ref arr);
+			
+
+        }
+					Console.WriteLine("After :" );
+			foreach(int a in arr)
+            	Console.WriteLine(a + " ");
+		
+	}
+	static void swapItems(int d,ref List<int> arr)
+    {
+		
+        for(int i=0; i<arr.Count-1; i++)
+        {
+            //Console.WriteLine(i + " " + arr[i]);
+            int temp = arr[i];
+            arr[i]=arr[i+1];
+            arr[i+1]=temp;
+        }
+        //return arr;
+    }
+}
