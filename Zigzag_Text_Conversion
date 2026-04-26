@@ -1,0 +1,36 @@
+using System;
+using System.Text;
+					
+public class Program
+{
+	public static void Main()
+	{
+		printZigZag ("Niteen",3);
+	}
+	static void printZigZag(string s, int numRows)
+	{
+		StringBuilder[] sb= new StringBuilder[numRows];
+		for(int i=0; i< numRows; i++)
+			sb[i]= new StringBuilder();
+		
+		int currentRow=0;
+		bool bZigZag=false;
+		
+		foreach(char ch in s)
+		{
+		//	Console.WriteLine("ch " + ch.ToString() + " currentRow " +currentRow + " bZigZag " + bZigZag.ToString() ) ;
+			sb[currentRow].Append(ch);
+			
+			if(currentRow ==0 || currentRow == numRows-1)
+				bZigZag= !bZigZag;
+			
+			currentRow += bZigZag ? 1 : -1;
+		}
+		
+		StringBuilder result= new StringBuilder();
+		foreach(var row in sb)
+			result.Append(row);
+		
+		Console.WriteLine(result.ToString());
+	}
+}

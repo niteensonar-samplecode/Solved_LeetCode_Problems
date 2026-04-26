@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string[] strs = new string[] { "abc", "cba", "xgf" };
+    Console.WriteLine("Group Anagrams Output is: " );
+		foreach (var s in CheckGroupAnagrams(strs))
+		{
+			foreach(string itm in s)
+				Console.Write(itm + " " );
+			
+			Console.WriteLine();
+		}
+		
+	}
+	public static List<List<string>> CheckGroupAnagrams(string[] strs) {
+		if (strs == null || strs.Length == 0) return new List<List<string>>();
+
+		// Dictionary to store the groups
+		Dictionary<string, List<string>> map = new Dictionary<string, List<string>>();
+
+		foreach (string s in strs) {
+			char[] characters = s.ToCharArray();
+			Array.Sort(characters);
+			string key = new string(characters);
+
+			
+			if (!map.ContainsKey(key)) {
+				map[key] = new List<string>();
+			}
+			map[key].Add(s);
+		}
+
+		
+		return new List<List<string>>(map.Values);
+	}
+}
